@@ -12,11 +12,30 @@
 \maketitle
 
 \part{Introduction}
+\paragraph{ 
+L'apprentissage machine (Machine Learning) est une branche de l'intelligence artificielle permettant à un systéme d'apprendre et d'améliorer ses performances par l'expérience et une mesure de ces derniéres, et donc sans étre explicitement programmé, recemment et nottament grace aux avancées en terme de hardware, cette branche de l'IA a révolutionner le domaine et à donner naissance à bon nombre d'applications (Systémes de reconnaissances d'images, detection d'anomalies, voitures autonomes, bots joueurs...) et ainsi résolu beaucoup de problémes qui sont difficiles à approcher en utilisant les techniques algorithmiques classiques.
+}
+\paragraph{
+Il y'a trois types d'approches pour résoudre un probléme en apprentissage automatique :\\
+}
+\begin{itemize}
+\item  \textbf{L'apprentissage supervisé:} cette approche est interessante dés qu'on a plusieurs instances de notre probléme (represtant un large échantillon représentatif) ainsi que les solutions correctes pour chaque instance, qu'on appelle labels, ici on vise à déduire un modéle represtant notre probléme i.e, une fonction qui prend en paramétres les données observables du probléme et qui nous en donne la solution, cette fonction aura des parametres internes qui seront "appris" ou optimisés par notre algorithme afin de construire le meilleur modéle possible Ex (Classifications d'images).
+    
+\item \textbf{L'apprentissage non-supervisé:} dans ce cas, on ne sait pas donner a notre algorithme les solutions correctes pour les instances de notre probléme, mais on lui demandera de déduire une structure et des informations à partir de ces instances (Clustering , Word Embeddings afin de déduire le lien sémantique entre les mots dans une langue).
 
+\item \textbf{L'apprentissage par renforcement:} cette derniére branche est considérée comme la plus prometeuse et la plus active en recherche car c'est le premier pas vers une intelligence artificielle générale, c'est pour cette raison qu'elle est trés utilisée dans des énvironements complexes comme pour les jeux ainsi que les voitures autonomes, elle se base sur le principe qu'on a un agent qui observe un environement et qui choisi de soummetre des actions à ce dernier, l'environement ensuite lui envoi une nouvelle observation, ainsi qu'une récompense ou une pénalité, l'agent optimisera ses actions en fonction des récompenses qu'il reçoit et aura donc tendance à prévilégier les états ou il peut avoir le plus de récompenses possibles.
+\end{itemize}
+     
 
+\paragraph{
+On entends aussi beaucou parler du Deep Learning, contrairement aux approches citées précédemment, le deep learning est plus un moyen ou une structure adaptée pour des calculs intensifs (les réseaux de neurones), qu'une approche, on peut utiliser le deep learning en apprentissage supervisé, non supervisé, ainsi qu'en apprentissage par renforcement (Deep reinforcement learning) il est également trés utilisé dans le domaine du big data (partie analytique) en raison du volume massif de données à analyser.
+}
 
+\paragraph{
+Dans le cadre de notre projet, on explore l'approche de l'apprentissage par renforcement et ses différents algorithmes afin de créer un agent capable de jouer et d'améliorer ses performances sur le jeu de plateau Ignis, on présentera donc une modélisation d'un processus de décision de Markov, ainsi que sa résolution par une méthode d'apprentissage par renforcement.
+}
 
-\part{théorie}
+\part{Théorie}
 \section{Processus de décision de Markov}
 \subsection{Processus de Markov}
 Le processus de décision de Markov décrit formellement un environnement pour l' apprentissage par renforcement. Cet environnement est totalement observable et dénombrable.
